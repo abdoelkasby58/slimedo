@@ -1,6 +1,6 @@
 <template>
   <header
-    class="w-full flex flex-col lg:flex-row items-center justify-between px-6 py-6 "
+    class="w-full flex flex-col lg:flex-row items-center justify-between px-6 py-6"
   >
     <!-- BOX 1 -->
     <div class="flex flex-col gap-6 flex-1 pl-1 lg:pl-10">
@@ -99,58 +99,42 @@
 
     <!-- BOX 2 -->
     <article class="flex gap-8 flex-1 justify-evenly mt-10 lg:mt-0 p-5">
-     
       <div
         class="animationtransform relative w-[170px] h-[340px] lg:w-[230px] lg:h-[400px] overflow-hidden rounded-[140px] bg-white shadow-sm border border-gray-100"
       >
-
         <img
           class="absolute inset-0 w-full h-full object-cover"
           :src="NurseSumet"
           alt="nursesumet"
         />
 
-      
-       <div
-  class="absolute bottom-0 left-0 right-0 h-1/3
-         backdrop-blur-md
-         [mask-image:linear-gradient(to_top,black,transparent)]
-         bg-black/30"
-></div>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-1/3 backdrop-blur-md [mask-image:linear-gradient(to_top,black,transparent)] bg-black/30"
+        ></div>
       </div>
 
-   
-  
       <div
         class="animationtransform relative w-[170px] h-[340px] lg:w-[230px] lg:h-[400px] overflow-hidden rounded-[140px] rounded-tr-[40px] bg-white shadow-sm border border-gray-100"
       >
-    
         <img
           class="absolute top-10 w-full h-full object-contain p-4"
           :src="Lungs"
           alt="Lungs"
         />
 
-     
-             <div
-  class="absolute bottom-0 left-0 right-0 h-1/3
-         backdrop-blur-md
-         [mask-image:linear-gradient(to_top,black,transparent)]
-         bg-black/30"
-></div>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-1/3 backdrop-blur-md [mask-image:linear-gradient(to_top,black,transparent)] bg-black/30"
+        ></div>
       </div>
     </article>
   </header>
-
 </template>
 <script setup>
-import NavBar from "@/components/NavBar.vue";
-import SlimedoLogo from "@/assets/slimedo_logo.png";
 import GrainLogo from "@/assets/grainLogo-removebg.png";
 import NurseSumet from "@/assets/nursesumet-removebg.png";
 import Lungs from "@/assets/lungsgraphic-removebg.png";
 import { ref } from "vue";
-import Chart from "@/components/Chart.vue";
+
 const patientImages = ref([
   "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
@@ -159,17 +143,17 @@ const patientImages = ref([
 ]);
 </script>
 <style>
-.animationtransform{
+.animationtransform {
   animation: translate 3s ease-in-out infinite;
 }
 @keyframes translate {
-  0%{
+  0% {
     transform: translateY(10px);
   }
-  50%{
+  50% {
     transform: translateY(0px);
   }
-  100%{
+  100% {
     transform: translateY(10px);
   }
 }

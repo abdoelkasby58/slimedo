@@ -96,8 +96,7 @@
   </div>
 </template>
 <script setup>
-import NavBar from "@/components/NavBar.vue";
-import SlimedoLogo from "@/assets/slimedo_logo.png";
+
 const nurses = [
   {
     name: "Dr. John Williams",
