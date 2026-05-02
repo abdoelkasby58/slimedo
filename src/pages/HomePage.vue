@@ -105,6 +105,7 @@
         <img
           class="absolute inset-0 w-full h-full object-cover"
           :src="NurseSumet"
+          loading="lazy"
           alt="nursesumet"
         />
 

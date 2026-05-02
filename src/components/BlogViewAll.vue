@@ -11,7 +11,11 @@
           :key="post.id"
           class="border rounded-2xl overflow-hidden hover:shadow-lg transition"
         >
-          <img :src="post.image" class="w-full h-52 object-cover" />
+          <img
+            :src="post.image"
+            loading="lazy"
+            class="w-full h-52 object-cover"
+          />
 
           <div class="p-5">
             <span class="text-xs bg-gray-100 px-2 py-1 rounded">
@@ -35,8 +39,6 @@
 </template>
 
 <script setup>
-import NavBar from "./NavBar.vue";
-import SlimedoLogo from "@/assets/slimedo_logo.png";
 const posts = [
   {
     id: 1,

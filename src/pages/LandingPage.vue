@@ -5,9 +5,9 @@
   <FacPage />
 </template>
 <script setup>
-import HomePage from "@/HomePage.vue";
-import ServicePage from "@/ServicePage.vue";
-import FacPage from "@/FacPage.vue";
-import BlogPage from "@/BlogPage.vue";
+import HomePage from "@/pages/HomePage.vue";
+import ServicePage from "@/pages/ServicePage.vue";
+import FacPage from "@/pages/FacPage.vue";
+import BlogPage from "@/pages/BlogPage.vue";
 </script>
 <style></style>

@@ -4,7 +4,11 @@
   >
     <!-- TITLE -->
     <div class="flex flex-col justify-center items-center max-w-2xl mb-12">
-       <h1 class="text-sm px-2 py-1 mb-6 bg-[#E3ECE9] w-fit rounded-[20px] font-bold text-[#26594E]">How It Works</h1>
+      <h1
+        class="text-sm px-2 py-1 mb-6 bg-[#E3ECE9] w-fit rounded-[20px] font-bold text-[#26594E]"
+      >
+        How It Works
+      </h1>
       <h2 class="text-4xl font-bold text-[#fff] mb-4">How It Works</h2>
 
       <p class="text-[#666] leading-relaxed text-center">
@@ -27,7 +31,7 @@
             class="p-2 bg-[#E3ECE9] rounded-full flex items-center justify-center"
           >
             <span class="text-[#29584F] text-3xl"
-              ><Icon :icon="box.icon" style="color: #29584f"
+              ><Icon :icon="box.icon" loading="lazy" style="color: #29584f"
             /></span>
           </div>
           <!-- NUMBER -->
@@ -75,6 +79,7 @@
         <!-- IMAGE -->
         <img
           :src="nurse.img"
+          loading="lazy"
           class="animationtransform w-[45vh] h-full object-cover group-hover:scale-110 transition duration-500"
           alt="nurse"
         />
@@ -96,7 +101,6 @@
   </div>
 </template>
 <script setup>
-
 const nurses = [
   {
     name: "Dr. John Williams",
@@ -151,17 +155,17 @@ const iconboxes = [
 ];
 </script>
 <style scoped>
-.animationtransform{
+.animationtransform {
   animation: translate 9s ease-in-out infinite;
 }
 @keyframes translate {
-  0%{
+  0% {
     transform: translateY(15px);
   }
-  50%{
+  50% {
     transform: translateY(0px);
   }
-  100%{
+  100% {
     transform: translateY(15px);
   }
 }

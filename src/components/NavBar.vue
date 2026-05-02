@@ -11,10 +11,12 @@ const isOpen = ref(false);
 
 <template>
   <header class="navbar bg-[#F4F7FF]">
-    <div class="navbar-container flex items-center justify-between mt-3 px-6 py-3">
+    <div
+      class="navbar-container flex items-center justify-between mt-3 px-6 py-3"
+    >
       <!-- Logo -->
       <div class="img-logo w-[140px]">
-        <img :src="logo" class="w-18" alt="logo" />
+        <img :src="logo" loading="lazy" class="w-18" alt="logo" />
       </div>
 
       <!-- Hamburger (Mobile) -->
@@ -39,12 +41,15 @@ const isOpen = ref(false);
                 >WeightLossPrograms</RouterLink
               >
             </li>
-            <div tabindex="0" class="text-[#414141b9] hover:text-black transition">
+            <div
+              tabindex="0"
+              class="text-[#414141b9] hover:text-black transition"
+            >
               <Icon
                 icon="material-symbols:keyboard-arrow-down-rounded"
                 width="24"
                 height="24"
-              class="transition-transform duration-300 group-hover:rotate-180"
+                class="transition-transform duration-300 group-hover:rotate-180"
               />
             </div>
           </div>
@@ -74,8 +79,8 @@ const isOpen = ref(false);
           log in
         </button>
         <button
-        @click="$router.push('/check')" 
-        class="px-4 py-2 text-white border-2 border-[#29584F] bg-[#29584F] rounded-[20px] hover:bg-transparent hover:text-black transition"
+          @click="$router.push('/check')"
+          class="px-4 py-2 text-white border-2 border-[#29584F] bg-[#29584F] rounded-[20px] hover:bg-transparent hover:text-black transition"
         >
           check suitability
         </button>
