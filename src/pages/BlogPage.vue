@@ -1,11 +1,14 @@
 <template>
-  <section>
+<NavBar :logo="SlimedoLogo"/>
     <Chart />
     <BlogSection />
-  </section>
+<Footer></Footer>
 </template>
 <script setup>
 import BlogSection from "@/components/BlogSection.vue";
 import Chart from "@/components/Chart.vue";
+import SlimedoLogo from "@/assets/slimedo_logo.Webp";
+import NavBar from "@/components/NavBar.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 <style scoped></style>

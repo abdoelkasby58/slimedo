@@ -11,6 +11,7 @@
             <img
               :src="SlimedoLogo"
               loading="lazy"
+              decoding="async"
               alt="Slimedo Logo"
               class="w-[40px]"
             />
@@ -126,7 +127,7 @@
   </footer>
 </template>
 <script setup>
-import SlimedoLogo from "@/assets/slimedo_logo.png";
+import SlimedoLogo from "@/assets/slimedo_logo.Webp";
 import { ref } from "vue";
 
 const footerLinks = ref([

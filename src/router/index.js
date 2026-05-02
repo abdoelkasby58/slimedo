@@ -1,17 +1,17 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
-  {
-    name: "landingpage",
-    path: "/",
-    component: () => import("@/pages/LandingPage.vue"),
-    meta: {
-      title: "LandingPage",
-    },
-  },
+  // {
+  //   name: "landingpage",
+  //   path: "/",
+  //   component: () => import("@/pages/LandingPage.vue"),
+  //   meta: {
+  //     title: "LandingPage",
+  //   },
+  // },
   {
     name: "weightlossprograms",
-    path: "/weightlossprograms",
+    path: "/",
     component: () => import("@/pages/HomePage.vue"),
     meta: {
       title: "WeightLossPrograms",

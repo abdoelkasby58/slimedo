@@ -1,4 +1,5 @@
 <template>
+  <NavBar :logo="SlimedoLogo"/>
   <section class="py-16 px-6 bg-[#F4F7FF]">
     <div class="max-w-6xl mx-auto">
       <!-- Title -->
@@ -14,6 +15,7 @@
           <img
             :src="post.image"
             loading="lazy"
+            decoding="async"
             class="w-full h-52 object-cover"
           />
 
@@ -36,9 +38,13 @@
       </div>
     </div>
   </section>
+  <Footer></Footer>
 </template>
 
 <script setup>
+import SlimedoLogo from "@/assets/slimedo_logo.Webp";
+import NavBar from "./NavBar.vue";
+import Footer from "./Footer.vue";
 const posts = [
   {
     id: 1,

@@ -3,8 +3,14 @@
     <!-- Header -->
     <div class="flex justify-between items-center max-w-6xl mx-auto mb-10">
       <div>
-         <h1 class="text-sm px-2 py-1 mb-6 bg-[#E3ECE9] w-fit rounded-[20px] font-bold text-[#26594E]">Blog</h1>
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Latest Health Insights</h2>
+        <h1
+          class="text-sm px-2 py-1 mb-6 bg-[#E3ECE9] w-fit rounded-[20px] font-bold text-[#26594E]"
+        >
+          Blog
+        </h1>
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">
+          Latest Health Insights
+        </h2>
         <p class="text-gray-500 mt-2">
           Expert medical advice, healthcare tips, and industry news
         </p>
@@ -26,8 +32,9 @@
         class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden"
       >
         <img
-          :src="post.image"
+          :src="post.image + '&q=60'"
           loading="lazy"
+          decoding="async"
           class="w-full h-48 object-cover"
         />
 
