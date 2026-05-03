@@ -6,30 +6,35 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 import vueDevTools from "vite-plugin-vue-devtools";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
+// غير الاسم ده باسم الريبو بتاعك
+const repoName = "slimedo";
+
 export default defineConfig(({ command }) => ({
+  base: `/${repoName}/`, // ✅ مهم جدًا لـ GitHub Pages
+
   plugins: [
     vue(),
-      vueJsx(),
+    vueJsx(),
     tailwindcss(),
     command === "serve" ? vueDevTools() : null,
   ].filter(Boolean),
+
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+
   build: {
     target: "es2020",
     cssCodeSplit: true,
     minify: "esbuild",
-   
     chunkSizeWarningLimit: 800,
+
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {
-           
             if (id.includes("@iconify/vue")) {
               return "icons";
             }
