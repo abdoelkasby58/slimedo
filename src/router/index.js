@@ -1,14 +1,6 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
-  // {
-  //   name: "landingpage",
-  //   path: "/",
-  //   component: () => import("@/pages/LandingPage.vue"),
-  //   meta: {
-  //     title: "LandingPage",
-  //   },
-  // },
   {
     name: "weightlossprograms",
     path: "/",
@@ -85,22 +77,22 @@ const routes = [
     name: "check",
     path: "/check",
     component: () => import("@/components/Check.vue"),
-    meta:{
-      title:"Check"
-    }
+    meta: {
+      title: "Check",
+    },
   },
   {
     name: "reviewed",
     path: "/reviewed",
     component: () => import("@/components/ReviewedPrescription.vue"),
-    meta:{
-      title:"Reviewed"
-    }
+    meta: {
+      title: "Reviewed",
+    },
   },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 router.beforeEach((to, from, next) => {
