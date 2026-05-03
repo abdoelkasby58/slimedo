@@ -39,6 +39,7 @@
       </p>
 
       <button
+        @click="$router.push('/reviewed')"
         class="w-fit px-4 py-2 bg-[#29584F] text-white capitalize rounded-full hover:bg-transparent hover:text-black border-2 border-[#29584F] transition"
       >
         rewviewed & receive a prescription
@@ -54,6 +55,7 @@
             height="30"
             style="color: #29584f"
           />
+          
           <h1>medicalty approved</h1>
         </div>
         <div
@@ -106,7 +108,7 @@
     <!-- BOX 2 -->
     <article class="flex gap-8 flex-1 justify-evenly mt-10 lg:mt-0 p-5">
       <div
-        class="animationtransform relative w-[170px] h-[340px] lg:w-[230px] lg:h-[400px] overflow-hidden rounded-[140px] bg-white shadow-sm border border-gray-100"
+        class="animationtransform relative w-[150px] h-[340px] lg:w-[230px] lg:h-[400px] overflow-hidden rounded-[140px] bg-white shadow-sm border border-gray-100"
       >
         <img
           class="absolute inset-0 w-full h-full object-cover"
@@ -122,7 +124,7 @@
       </div>
 
       <div
-        class="animationtransform relative w-[170px] h-[340px] lg:w-[230px] lg:h-[400px] overflow-hidden rounded-[140px] rounded-tr-[40px] bg-white shadow-sm border border-gray-100"
+        class="animationtransform relative w-[150px] h-[340px] lg:w-[230px] lg:h-[400px] overflow-hidden rounded-[140px] rounded-tr-[40px] bg-white shadow-sm border border-gray-100"
       >
         <img
           class="absolute top-10 w-full h-full object-contain p-4"

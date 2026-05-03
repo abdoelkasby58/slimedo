@@ -18,6 +18,38 @@ const routes = [
     },
   },
   {
+    name: "login",
+    path: "/login",
+    component: () => import("@/components/LogIn.vue"),
+    meta: {
+      title: "LogIn",
+    },
+  },
+  {
+    name: "forgetpassword",
+    path: "/forgetpassword",
+    component: () => import("@/components/ForgetPassword.vue"),
+    meta: {
+      title: "Forget Password",
+    },
+  },
+  {
+    name: "create",
+    path: "/createaccount",
+    component: () => import("@/components/CreateAccount.vue"),
+    meta: {
+      title: "Create Account",
+    },
+  },
+  {
+    name: "confirm",
+    path: "/confirmpassword",
+    component: () => import("@/components/ConfirPassword.vue"),
+    meta: {
+      title: "Confirm Password",
+    },
+  },
+  {
     name: "howitworks",
     path: "/howitworks",
     component: () => import("@/pages/ServicePage.vue"),
@@ -55,6 +87,14 @@ const routes = [
     component: () => import("@/components/Check.vue"),
     meta:{
       title:"Check"
+    }
+  },
+  {
+    name: "reviewed",
+    path: "/reviewed",
+    component: () => import("@/components/ReviewedPrescription.vue"),
+    meta:{
+      title:"Reviewed"
     }
   },
 ];
