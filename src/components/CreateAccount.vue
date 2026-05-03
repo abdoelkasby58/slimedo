@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import SlimedoLogo from "@/assets/slimedo_logo.Webp";
+import Slimedo from "@/assets/slimedo_logo.Webp";
 import NavBar from "./NavBar.vue";
 import Footer from "./Footer.vue";
 import { Icon } from "@iconify/vue";
@@ -68,7 +68,7 @@ router.push("/login");
 </script>
 
 <template>
-  <NavBar :logo="SlimedoLogo" />
+  <NavBar :logo="Slimedo" />
   <header class="min-h-screen flex items-center justify-center bg-[#F4F7FF]">
     <div
       class="w-[320px] md:w-[380px] p-8 flex flex-col items-center rounded-tr-[40px] border-2 border-[#26594E] bg-white shadow-lg my-2"
