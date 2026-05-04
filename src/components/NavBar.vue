@@ -1,7 +1,10 @@
 <script setup>
 import { ref } from "vue";
-import { RouterLink } from "vue-router";
-
+import { RouterLink, useRouter } from "vue-router";
+const router = useRouter();
+const refresh = ()=>{
+  router.push("/")
+}
 defineProps({
   logo: String,
 });
@@ -10,13 +13,13 @@ const isOpen = ref(false);
 </script>
 
 <template>
-  <header class="navbar bg-[#F4F7FF]">
+  <header class="navbar bg-[#f4f7ffa2] h-[100px] w-full sticky top-1 rounded-[500px] z-[111]">
     <div
-      class="navbar-container flex items-center justify-between mt-3 px-6 py-3"
+      class="navbar-container flex items-center justify-between m-1 md:m-3 px-6"
     >
       <!-- Logo -->
-      <div class="img-logo w-[140px]">
-        <img :src="logo" loading="lazy" class="w-18" alt="logo" />
+      <div class="img-logo w-[140px]" @click="refresh">
+        <img :src="logo" loading="lazy" class="w-14 md:w-18" alt="logo" />
       </div>
 
       <!-- Hamburger (Mobile) -->
@@ -105,4 +108,7 @@ const isOpen = ref(false);
     </div>
   </header>
 </template>
-<style scoped></style>
+<style scoped>
+h1{
+  color: #f4f7ffa2;
+}</style>
