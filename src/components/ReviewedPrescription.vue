@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
-import Slimedo from "@/assets/slimedo_logo.Webp"
+import Slimedo from "@/assets/slimedo_logo.png"
 const router = useRouter();
 
 const name = ref("");

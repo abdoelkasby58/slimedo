@@ -142,9 +142,9 @@
   </header>
 </template>
 <script setup>
-import GrainLogo from "@/assets/grainLogo-removebg.webp";
-import NurseSumet from "@/assets/nursesumet-removebg.webp";
-import Lungs from "@/assets/lungsgraphic-removebg.webp";
+import GrainLogo from "@/assets/grainLogo-removebg.png";
+import NurseSumet from "@/assets/nursesumet-removebg.png";
+import Lungs from "@/assets/lungsgraphic-removebg.png";
 import { ref } from "vue";
 
 const patientImages = ref([

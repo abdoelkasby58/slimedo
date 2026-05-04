@@ -42,7 +42,7 @@
 </template>
 
 <script setup>
-import SlimedoLogo from "@/assets/slimedo_logo.Webp";
+import SlimedoLogo from "@/assets/slimedo_logo.png";
 import NavBar from "./NavBar.vue";
 import Footer from "./Footer.vue";
 const posts = [

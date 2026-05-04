@@ -9,7 +9,7 @@ import ExpertMedical from '@/components/ExpertMedical.vue';
 import HomeWork from '@/components/HomeWork.vue';
 
 import NavBar from '@/components/NavBar.vue';
-import SlimedoLogo from "@/assets/slimedo_logo.Webp";
+import SlimedoLogo from "@/assets/slimedo_logo.png";
 import Footer from '@/components/Footer.vue';
 
 </script>

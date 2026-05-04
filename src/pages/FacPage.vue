@@ -9,7 +9,7 @@
 <script setup>
 
 import NavBar from "@/components/NavBar.vue";
-import SlimedoLogo from "@/assets/slimedo_logo.Webp";
+import SlimedoLogo from "@/assets/slimedo_logo.png";
 import Footer from "@/components/Footer.vue";
 import FacQuestion from "@/components/FacQuestion.vue";
 import BoxCheckTo from "@/components/BoxCheckTo.vue";
