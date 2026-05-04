@@ -21,7 +21,7 @@ onUnmounted(() => {
 <template>
   <header class="flex flex-col bg-[#F4F7FF]">
      <div :class="[
-    'fixed bottom-5 right-5 cursor-pointer transition-all duration-300 flex items-center justify-center rounded-full shadow-md',
+    'fixed bottom-5 right-5 cursor-pointer transition-all duration-300 flex items-center justify-center rounded-full shadow-md z-[1111]',
     showScroll
       ? 'opacity-100 translate-y-0'
       : 'opacity-0 translate-y-5 pointer-events-none'
