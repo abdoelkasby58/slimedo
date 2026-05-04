@@ -1,7 +1,9 @@
 <script setup>
 import { ref, computed } from "vue";
 import { Icon } from "@iconify/vue";
-
+import NavBar from "./NavBar.vue";
+import Slimedologo from "@/assets/slimedo_logo.png"
+import Footer from "./Footer.vue";
 const weight = ref("");
 const height = ref("");
 
@@ -22,6 +24,7 @@ const category = computed(() => {
 </script>
 
 <template>
+    <NavBar :logo="Slimedologo"/>
   <div class="min-h-screen flex items-center justify-center bg-[#f4f7ff] p-4">
     <div class="bg-white p-8 rounded-2xl shadow-md w-full max-w-md text-center">
       
@@ -74,4 +77,5 @@ const category = computed(() => {
       </button>
     </div>
   </div>
+  <Footer></Footer>
 </template>

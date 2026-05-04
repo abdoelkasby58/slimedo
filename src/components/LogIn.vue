@@ -5,7 +5,7 @@ import NavBar from "./NavBar.vue";
 import Footer from "./Footer.vue";
 import { Icon } from "@iconify/vue";
 import router from "@/router";
-import { useRouter } from "vue-router";
+
 const email = ref("");
 const password = ref("");
 const showPassword = ref(false);
