@@ -107,7 +107,8 @@
         <!-- Button -->
         <button
           class="w-full bg-[#29584F] text-white py-3 rounded-full hover:scale-105 transition"
-        >
+        
+        @click="routerTobmi"  >
           Check your BMI now
         </button>
 
@@ -131,6 +132,7 @@ import {
   Tooltip,
   Filler,
 } from "chart.js";
+import { useRouter } from "vue-router";
 
 Chart.register(
   LineController,
@@ -143,7 +145,10 @@ Chart.register(
 );
 
 const weight = ref(95);
-
+const router = useRouter()
+const routerTobmi = ()=>{
+router.push("/bmicheck")
+}
 // معادلة بسيطة (تقدر تغيرها براحتك)
 const weightLoss = computed(() => {
   return Math.round(weight.value * 0.1);

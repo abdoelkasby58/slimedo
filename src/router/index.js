@@ -89,6 +89,14 @@ const routes = [
       title: "Reviewed",
     },
   },
+  {
+    name: "bmi",
+    path: "/bmicheck",
+    component: () => import("@/components/BmiCheck.vue"),
+    meta: {
+      title: "BMI",
+    },
+  },
 ];
 
 const router = createRouter({
