@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col items-center">
     <h1
-      class="text-sm px-2 py-1 mb-6 bg-[#E3ECE9] w-fit rounded-[20px] font-bold text-[#26594E]"
+      class="text-sm px-2 py-1 mb-6 bg-[#E3ECE9] w-fit capitalize rounded-[20px] font-bold text-[#26594E]"
     >
       fac
     </h1>

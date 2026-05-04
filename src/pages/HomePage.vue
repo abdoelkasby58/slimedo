@@ -1,4 +1,5 @@
 <template>
+
   <NavBar :logo="SlimedoLogo" />
   <HeroSection />
   <HomeWork />
@@ -17,5 +18,6 @@ import HomeWork from "@/components/HomeWork.vue";
 import ExpertMedical from "@/components/ExpertMedical.vue";
 import Chart from "@/components/Chart.vue";
 import BlogSection from "@/components/BlogSection.vue";
+
 </script>
 <style scoped></style>
