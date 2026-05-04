@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import Slimedo from "@/assets/slimedo_logo.png";
+import SlimedoLogo from "@/assets/slimedo_logo.png";
 import NavBar from "./NavBar.vue";
 import Footer from "./Footer.vue";
 import { Icon } from "@iconify/vue";
@@ -57,123 +57,90 @@ const validate = () => {
     passwordErrorcon.value = "The password does not match";
     logCreate = true;
   }
- if (logCreate) return;
+  if (logCreate) return;
 
-localStorage.setItem("Name", name.value);
-localStorage.setItem("Email", email.value);
-localStorage.setItem("Password", passwordcon.value);
+  localStorage.setItem("Name", name.value);
+  localStorage.setItem("Email", email.value);
+  localStorage.setItem("Password", passwordcon.value);
 
-router.push("/login");
+  router.push("/login");
 };
 </script>
 
 <template>
-  <NavBar :logo="Slimedo" />
+  <NavBar />
   <header class="min-h-screen flex items-center justify-center bg-[#F4F7FF]">
     <div
-      class="w-[320px] md:w-[380px] p-8 flex flex-col items-center rounded-tr-[40px] border-2 border-[#26594E] bg-white shadow-lg my-2"
-    >
+      class="w-[320px] md:w-[380px] p-8 flex flex-col items-center rounded-tr-[40px] border-2 border-[#26594E] bg-white shadow-lg my-2">
       <!-- LOGO -->
       <img :src="SlimedoLogo" class="w-20 mb-4" alt="" />
 
       <h1 class="text-2xl font-bold mb-6">Create Account</h1>
       <!-- Name -->
       <div class="w-full mb-4 flex flex-col">
-        <small
-          v-if="NameError"
-          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs"
-          >{{ NameError }}</small
-        >
+        <small v-if="NameError"
+          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs">{{ NameError
+          }}</small>
         <label for="text" class="text-sm">Name</label>
-        <input
-          type="text"
-          v-model="name"
-          name="text"
-          class="w-full mt-1 px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]"
-          id="text"
-          placeholder="Your is Name"
-        />
+        <input type="text" v-model="name" name="text"
+          class="w-full mt-1 px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]" id="text"
+          placeholder="Your is Name" />
       </div>
       <!-- EMAIL -->
       <div class="w-full mb-4 flex flex-col">
-        <small
-          v-if="emailerror"
-          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs"
-        >
+        <small v-if="emailerror"
+          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs">
           {{ emailerror }}
         </small>
 
         <label class="text-sm">Email</label>
 
-        <input
-          v-model="email"
-          type="email"
-          placeholder="Enter your email"
-          class="w-full mt-1 px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]"
-        />
+        <input v-model="email" type="email" placeholder="Enter your email"
+          class="w-full mt-1 px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]" />
       </div>
       <!-- PASSWORD -->
       <div class="w-full mb-6 flex flex-col">
-        <small
-          v-if="passwordError"
-          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs"
-        >
+        <small v-if="passwordError"
+          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs">
           {{ passwordError }}
         </small>
 
         <label class="text-sm">Password</label>
 
         <div class="relative mt-1">
-          <input
-            v-model="password"
-            :type="showPassword ? 'text' : 'password'"
-            placeholder="Enter your password"
-            class="w-full px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]"
-          />
+          <input v-model="password" :type="showPassword ? 'text' : 'password'" placeholder="Enter your password"
+            class="w-full px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]" />
 
           <!-- ICON -->
-          <span
-            @click="showPassword = !showPassword"
-            class="absolute right-3 top-[10px] cursor-pointer text-[20px] text-gray-600"
-          >
+          <span @click="showPassword = !showPassword"
+            class="absolute right-3 top-[10px] cursor-pointer text-[20px] text-gray-600">
             <Icon :icon="showPassword ? 'mdi:eye' : 'mdi:eye-off'"></Icon>
           </span>
         </div>
       </div>
       <!-- PASSWORD CONFIRM -->
       <div class="w-full mb-6 flex flex-col">
-        <small
-          v-if="passwordErrorcon"
-          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs"
-        >
+        <small v-if="passwordErrorcon"
+          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs">
           {{ passwordErrorcon }}
         </small>
 
         <label class="text-sm">Confirm Password</label>
 
         <div class="relative mt-1">
-          <input
-            v-model="passwordcon"
-            :type="showPasswordcon ? 'text' : 'password'"
-            placeholder="Enter your password"
-            class="w-full px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]"
-          />
+          <input v-model="passwordcon" :type="showPasswordcon ? 'text' : 'password'" placeholder="Enter your password"
+            class="w-full px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]" />
 
           <!-- ICON -->
-          <span
-            @click="showPasswordcon = !showPasswordcon"
-            class="absolute right-3 top-[10px] cursor-pointer text-[20px] text-gray-600"
-          >
+          <span @click="showPasswordcon = !showPasswordcon"
+            class="absolute right-3 top-[10px] cursor-pointer text-[20px] text-gray-600">
             <Icon :icon="showPasswordcon ? 'mdi:eye' : 'mdi:eye-off'"></Icon>
           </span>
         </div>
       </div>
 
       <!-- BUTTON -->
-      <button
-        @click="validate"
-        class="w-full bg-[#26594E] text-white py-2 rounded-lg hover:opacity-90 transition"
-      >
+      <button @click="validate" class="w-full bg-[#26594E] text-white py-2 rounded-lg hover:opacity-90 transition">
         Log In
       </button>
       <div class="text-center mt-3 text-sm">

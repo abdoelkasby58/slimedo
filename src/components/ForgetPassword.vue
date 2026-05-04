@@ -1,5 +1,5 @@
 <template>
-  <NavBar :logo="SlimedoLogo" />
+  <NavBar  />
   <header class="min-h-screen flex items-center justify-center bg-[#F4F7FF]">
     <div
       class="w-[320px] md:w-[380px] p-8 py-15 flex flex-col items-center rounded-tr-[40px] border-2 border-[#26594E] bg-white shadow-lg"

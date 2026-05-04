@@ -3,9 +3,7 @@
     <!-- Header -->
     <div class="flex justify-between items-center max-w-6xl mx-auto mb-10">
       <div>
-        <h1
-          class="text-sm px-2 py-1 mb-6 bg-[#E3ECE9] w-fit rounded-[20px] font-bold text-[#26594E]"
-        >
+        <h1 class="text-sm px-2 py-1 mb-6 bg-[#E3ECE9] w-fit rounded-[20px] font-bold text-[#26594E]">
           Blog
         </h1>
         <h2 class="text-3xl font-bold text-gray-800 mb-4">
@@ -16,27 +14,16 @@
         </p>
       </div>
 
-      <button
-        @click="goToBlog"
-        class="bg-[#29584F] text-white px-5 py-2 rounded-full hover:scale-105 transition"
-      >
+      <button @click="goToBlog" class="bg-[#29584F] text-white px-5 py-2 rounded-full hover:scale-105 transition">
         View All →
       </button>
     </div>
 
     <!-- Cards -->
     <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <div
-        v-for="post in posts"
-        :key="post.id"
-        class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden"
-      >
-        <img
-          :src="post.image + '&q=60'"
-          loading="lazy"
-          decoding="async"
-          class="w-full h-48 object-cover"
-        />
+      <div v-for="post in posts" :key="post.id"
+        class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+        <img :src="post.image + '&q=60'" loading="lazy" decoding="async" class="w-full h-48 object-cover" />
 
         <div class="p-4">
           <div class="flex gap-2 mb-2">

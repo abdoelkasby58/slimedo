@@ -1,5 +1,5 @@
 <template>
-<NavBar :logo="SlimedoLogo"/>
+<NavBar  "/>
     <Chart />
     <BlogSection />
 <Footer></Footer>

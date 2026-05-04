@@ -56,11 +56,10 @@ const validate = () => {
 </script>
 
 <template>
-  <NavBar :logo="SlimedoLogo" />
+  <NavBar />
   <header class="min-h-screen flex items-center justify-center bg-[#F4F7FF]">
     <div
-      class="w-[320px] md:w-[380px] p-8 flex flex-col items-center rounded-tr-[40px] border-2 border-[#26594E] bg-white shadow-lg"
-    >
+      class="w-[320px] md:w-[380px] p-8 flex flex-col items-center rounded-tr-[40px] border-2 border-[#26594E] bg-white shadow-lg">
       <!-- LOGO -->
       <img :src="SlimedoLogo" class="w-20 mb-4" alt="" />
 
@@ -68,70 +67,47 @@ const validate = () => {
 
       <!-- EMAIL -->
       <div class="w-full mb-4 flex flex-col">
-        <small
-          v-if="emailError"
-          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs"
-        >
+        <small v-if="emailError"
+          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs">
           {{ emailError }}
         </small>
 
         <label class="text-sm">Email</label>
 
-        <input
-          v-model="email"
-          type="email"
-          placeholder="Enter your email"
-          class="w-full mt-1 px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]"
-        />
+        <input v-model="email" type="email" placeholder="Enter your email"
+          class="w-full mt-1 px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]" />
       </div>
 
       <!-- PASSWORD -->
       <div class="w-full mb-6 flex flex-col">
-        <small
-          v-if="passwordError"
-          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs"
-        >
+        <small v-if="passwordError"
+          class="border-l-2 pl-1 font-bold bg-[#ff000055] py-1 rounded-tr-[20px] text-red-500 text-xs">
           {{ passwordError }}
         </small>
 
         <label class="text-sm">Password</label>
 
         <div class="relative mt-1">
-          <input
-            v-model="password"
-            :type="showPassword ? 'text' : 'password'"
-            placeholder="Enter your password"
-            class="w-full px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]"
-          />
+          <input v-model="password" :type="showPassword ? 'text' : 'password'" placeholder="Enter your password"
+            class="w-full px-3 py-2 border rounded-lg outline-none focus:ring-2 focus:ring-[#26594E]" />
 
           <!-- ICON -->
-          <span
-            @click="showPassword = !showPassword"
-            class="absolute right-3 top-[10px] cursor-pointer text-[20px] text-gray-600"
-          >
+          <span @click="showPassword = !showPassword"
+            class="absolute right-3 top-[10px] cursor-pointer text-[20px] text-gray-600">
             <Icon :icon="showPassword ? 'mdi:eye' : 'mdi:eye-off'"></Icon>
           </span>
         </div>
       </div>
 
       <!-- BUTTON -->
-      <button
-        @click="validate"
-        class="w-full bg-[#26594E] text-white py-2 rounded-lg hover:opacity-90 transition"
-      >
+      <button @click="validate" class="w-full bg-[#26594E] text-white py-2 rounded-lg hover:opacity-90 transition">
         Log In
       </button>
       <div class="text-center mt-3 text-sm">
-        <h1
-          @click="$router.push('/createaccount')"
-          class="hover:text-[#000000be] cursor-pointer mb-1"
-        >
+        <h1 @click="$router.push('/createaccount')" class="hover:text-[#000000be] cursor-pointer mb-1">
           Create Account New
         </h1>
-        <h1
-          @click="$router.push('/forgetpassword')"
-          class="hover:text-[#000000be] cursor-pointer"
-        >
+        <h1 @click="$router.push('/forgetpassword')" class="hover:text-[#000000be] cursor-pointer">
           Forget Password
         </h1>
       </div>

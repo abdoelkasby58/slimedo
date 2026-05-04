@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="min-h-screen flex flex-col justify-center items-center p-6"
-  >
+  <section class="min-h-screen flex flex-col justify-center items-center p-6">
     <!-- Title -->
     <div class="text-center mb-12">
       <h1 class="text-3xl font-bold text-gray-800 mb-3">
@@ -85,30 +83,20 @@
         </div>
 
         <!-- Slider -->
-        <input
-          type="range"
-          min="50"
-          max="150"
-          v-model="weight"
-          class="w-full accent-[#29584F] mb-6"
-        />
+        <input type="range" min="50" max="150" v-model="weight" class="w-full accent-[#29584F] mb-6" />
 
         <!-- Result -->
         <div class="text-center mb-6">
           <p class="text-sm text-gray-400">Your result could be:</p>
 
-          <h2
-            class="text-3xl font-bold text-[#29584F] transition-all duration-300"
-          >
+          <h2 class="text-3xl font-bold text-[#29584F] transition-all duration-300">
             -{{ weightLoss }} kg
           </h2>
         </div>
 
         <!-- Button -->
-        <button
-          class="w-full bg-[#29584F] text-white py-3 rounded-full hover:scale-105 transition"
-        
-        @click="routerTobmi"  >
+        <button class="w-full bg-[#29584F] text-white py-3 rounded-full hover:scale-105 transition"
+          @click="routerTobmi">
           Check your BMI now
         </button>
 
@@ -146,8 +134,8 @@ Chart.register(
 
 const weight = ref(95);
 const router = useRouter()
-const routerTobmi = ()=>{
-router.push("/bmicheck")
+const routerTobmi = () => {
+  router.push("/bmicheck")
 }
 // معادلة بسيطة (تقدر تغيرها براحتك)
 const weightLoss = computed(() => {
@@ -174,9 +162,9 @@ onMounted(() => {
           borderColor: "#29584F",
           backgroundColor: gradient,
           fill: true,
-          tension:0.3,
-          pointRadius:5,
-          pointBackgroundColor:"#29584F"
+          tension: 0.3,
+          pointRadius: 5,
+          pointBackgroundColor: "#29584F"
         },
       ],
     },

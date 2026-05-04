@@ -5,9 +5,7 @@ const router = useRouter();
 const refresh = () => {
   router.push("/")
 }
-defineProps({
-  logo: String,
-});
+import SlimedoLogo from "@/assets/slimedo_logo.png"
 
 const isOpen = ref(false);
 </script>
@@ -18,7 +16,7 @@ const isOpen = ref(false);
     <div class="navbar-container flex items-center justify-between m-1 md:m-3 px-6">
       <!-- Logo -->
       <div class="img-logo w-[140px]" @click="refresh">
-        <img :src="logo" loading="lazy" class="w-14 md:w-18" alt="logo" />
+        <img :src="SlimedoLogo" loading="lazy" class="w-14 md:w-18" alt="logo" />
       </div>
 
       <!-- Hamburger (Mobile) -->

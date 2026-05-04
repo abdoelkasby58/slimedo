@@ -1,5 +1,5 @@
 <template>
-  <NavBar :logo="SlimedoLogo"/>
+  <NavBar />
   <section class="py-16 px-6 bg-[#F4F7FF]">
     <div class="max-w-6xl mx-auto">
       <!-- Title -->
@@ -7,17 +7,8 @@
 
       <!-- Grid -->
       <div class="grid md:grid-cols-3 gap-8">
-        <div
-          v-for="post in posts"
-          :key="post.id"
-          class="border rounded-2xl overflow-hidden hover:shadow-lg transition"
-        >
-          <img
-            :src="post.image"
-            loading="lazy"
-            decoding="async"
-            class="w-full h-52 object-cover"
-          />
+        <div v-for="post in posts" :key="post.id" class="border rounded-2xl overflow-hidden hover:shadow-lg transition">
+          <img :src="post.image" loading="lazy" decoding="async" class="w-full h-52 object-cover" />
 
           <div class="p-5">
             <span class="text-xs bg-gray-100 px-2 py-1 rounded">
@@ -42,7 +33,7 @@
 </template>
 
 <script setup>
-import SlimedoLogo from "@/assets/slimedo_logo.png";
+
 import NavBar from "./NavBar.vue";
 import Footer from "./Footer.vue";
 const posts = [

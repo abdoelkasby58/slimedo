@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
-import Slimedo from "@/assets/slimedo_logo.png"
+
 const router = useRouter();
 
 const name = ref("");
@@ -32,7 +32,7 @@ const receivePrescription = () => {
 </script>
 
 <template>
-  <NavBar  :logo="Slimedo"/>
+  <NavBar />
 
   <section class="min-h-[70vh] flex items-center justify-center px-4">
     <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-lg">
@@ -64,11 +64,8 @@ const receivePrescription = () => {
       </div>
 
       <!-- Button -->
-      <button
-        v-if="status === 'reviewed'"
-        @click="receivePrescription"
-        class="w-full bg-[#26594E] text-white py-3 rounded-xl hover:opacity-90 transition"
-      >
+      <button v-if="status === 'reviewed'" @click="receivePrescription"
+        class="w-full bg-[#26594E] text-white py-3 rounded-xl hover:opacity-90 transition">
         Receive Prescription
       </button>
 
