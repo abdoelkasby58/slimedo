@@ -3,7 +3,7 @@
     <h1
       class="text-sm px-2 py-1 mb-6 bg-[#E3ECE9] w-fit capitalize rounded-[20px] font-bold text-[#26594E]"
     >
-      fac
+      faq
     </h1>
     <h4 class="text-4xl font-bold text-black mb-2">
       frequently asked questions
