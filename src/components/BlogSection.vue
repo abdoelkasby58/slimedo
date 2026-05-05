@@ -59,27 +59,27 @@ const goToBlog = () => {
 const posts = [
   {
     id: 1,
-    title: "The Future of Telemedicine",
-    desc: "Discover how telemedicine is changing healthcare...",
+    title: "Track Your Calories",
+    desc: "Learn how to track your daily calories and reach your health goals with simple and effective steps.",
     image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&q=80",
-    tag: "Telemedicine",
+      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&auto=format&q=80",
+    tag: "Nutrition",
   },
   {
     id: 2,
-    title: "Understanding Your Prescription",
-    desc: "Learn how to read prescriptions and dosage...",
+    title: "Why Hydration Matters",
+    desc: "Discover the importance of staying hydrated and how it impacts your energy and overall health.",
     image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&q=80",
-    tag: "Tips & Guide",
+      "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=600&auto=format&q=80",
+    tag: "Health Tips",
   },
   {
     id: 3,
-    title: "Improve Your Health",
-    desc: "Simple lifestyle changes that make a difference...",
+    title: "Daily Fitness Routine",
+    desc: "A simple daily routine you can follow to gradually improve your fitness and stay active.",
     image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&q=80",
-    tag: "Wellness",
+      "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?w=600&auto=format&q=80",
+    tag: "Fitness",
   },
 ];
 </script>

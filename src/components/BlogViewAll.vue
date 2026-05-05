@@ -42,7 +42,7 @@ const posts = [
     title: "The Future of Telemedicine",
     desc: "Discover how telemedicine is changing healthcare...",
     image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&q=80",
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&auto=format&q=80",
     tag: "Telemedicine",
   },
   {
@@ -50,7 +50,7 @@ const posts = [
     title: "Understanding Your Prescription",
     desc: "Learn how to read prescriptions and dosage...",
     image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&q=80",
+      "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&auto=format&q=80",
     tag: "Tips & Guide",
   },
   {
@@ -58,7 +58,7 @@ const posts = [
     title: "Improve Your Health",
     desc: "Simple lifestyle changes that make a difference...",
     image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&q=80",
+      "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&auto=format&q=80",
     tag: "Wellness",
   },
   {
@@ -66,7 +66,7 @@ const posts = [
     title: "Healthy Diet Plans",
     desc: "Best diet plans for weight loss...",
     image:
-      "https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&auto=format&q=80",
+      "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&auto=format&q=80",
     tag: "Nutrition",
   },
 ];
