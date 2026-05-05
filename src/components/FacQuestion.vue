@@ -5,7 +5,7 @@
     >
       faq
     </h1>
-    <h4 class="text-4xl font-bold text-black mb-2">
+    <h4 class="text-4xl font-bold text-center text-black mb-2">
       frequently asked questions
     </h4>
     <p class="text-[13px] text-[#666] mt-2 text-center">
